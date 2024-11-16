@@ -99,10 +99,20 @@
   height: 24px;
 }
 
+.icons span {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.icons span:hover {
+  transform: scale(1.1);
+  background-color: var(--color-base-gray-400);
+}
+
 .CaretDoubleDown {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
   height: 32px;
-  left: calc(50% - 32px / 2);
-  top: 430px;
+  margin: 20px auto;
 }
