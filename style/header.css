@@ -1,0 +1,108 @@
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 80px;
+
+  position: absolute;
+  width: 1040px;
+  height: 427px;
+  left: calc(50% - 1040px / 2);
+  top: 120px;
+}
+
+.profile-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 56px;
+  width: 680px;
+  height: 307px;
+}
+
+/* Avatar */
+.profile-images .profile-pic {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+}
+
+/* Code */
+.profile-images .developer-icon {
+  position: relative;
+  top: 65px;
+  left: 35px;
+  width: 32px;
+  height: 32px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.profile-info p:nth-child(1) {
+  font-family: var(--font-family-inconsolata);
+  font: var(--sub-title-Inconsolata);
+  color: var(--color-base-gray-500);
+}
+
+.name {
+  color: var(--color-red);
+}
+
+.profile-info h1:nth-child(2) {
+  font-family: var(--font-family-asap);
+  font: var(--text-lg-asap);
+  color: var(--color-base-gray-600);
+}
+
+.profile-info p:nth-child(3) {
+  font-family: var(--font-family-mavenpro);
+  font: var(--text-md-mavenpro);
+  color: var(--color-base-gray-400);
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 754px;
+  height: 40px;
+}
+
+.icons span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+  width: 114px;
+  height: 40px;
+  background: var(--color-base-gray-300);
+  border-radius: 999px;
+  color: var(--color-base-gray-500);
+  font: var(--text-md-mavenpro);
+  object-fit: cover;
+}
+
+.icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.CaretDoubleDown {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: calc(50% - 32px / 2);
+  top: 430px;
+}

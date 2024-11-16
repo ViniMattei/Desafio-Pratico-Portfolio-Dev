@@ -1,0 +1,10 @@
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 72px 120px;
+  margin-top: 140px;
+  gap: 56px;
+  background-color: var(--color-base-gray-300);
+}
