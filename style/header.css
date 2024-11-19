@@ -1,12 +1,20 @@
+.container {
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: url(/assets/img/Background_Intro.png) no-repeat center center;
+  background-size: cover;
+}
+
 .profile-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
-  gap: 80px;
-
-  position: absolute;
-  width: 1040px;
+  position: relative;
+  max-width: 1040px;
+  width: 100%;
   height: 427px;
   left: calc(50% - 1040px / 2);
   top: 120px;
@@ -73,7 +81,6 @@
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
-
   width: 754px;
   height: 40px;
 }

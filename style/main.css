@@ -3,9 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 72px 120px;
-  margin-top: 140px;
+  padding: 72px 120px 0 120px;
+  margin-top: 143px;
   gap: 56px;
+
   width: 100vw;
   background: var(--color-base-gray-200) no-repeat;
   object-fit: cover;
@@ -13,48 +14,54 @@
 }
 
 .projects-section h2 {
+  display: flex;
+  justify-content: center;
   color: var(--color-red);
   font: var(--sub-title-Inconsolata);
+  margin-bottom: 8px;
 }
 
 .projects-section h3 {
   font-family: var(--font-family-asap);
   color: var(--color-base-gray-600);
-  
   font: var(--text-md-asap);
   text-align: center;
+  font-weight: bold;
 }
 
 .projects-grid {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-align-items: flex-start;
-align-content: center;
-padding: 0px;
-gap: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  padding: 0px;
+  gap: 24px;
 
-width: 1040px;
-height: 584px;
+  width: 1040px;
+  height: 584px;
 }
 
 .project-card {
-display: flex;
-flex-direction: column;
-padding: 12px;
-gap: 20px;
-width: 330px;
-height: 280px;
-background: var(--color-base-gray-300);
-border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 20px;
+  width: 100%;
+  max-width: 330px;
+  background: var(--color-base-gray-300);
+  border-radius: 12px;
 }
 
+.project-card:hover {
+  background: var(--color-base-gray-400);
+}
 
 .project-card img {
-width: 306px;
-height: 156px;
-border-radius: 8px;
+  width: 306px;
+  height: 156px;
+  border-radius: 8px;
 }
 
 .project-card h4 {
@@ -64,7 +71,79 @@ border-radius: 8px;
 
 .project-card p {
   color: var(--color-base-gray-500);
-  font: var( --text-sm-mavenpro);
+  font: var(--text-sm-mavenpro);
   font-family: var(--font-family-mavenpro);
 }
-  
+
+.service-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 88px 120px;
+  gap: 56px;
+  width: 100vw;
+  min-height: 480px;
+  background: var(--color-base-gray-100) no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.service-sub-title h5 {
+  display: flex;
+  justify-content: center;
+  color: var(--color-red);
+  font: var(--sub-title-Inconsolata);
+  font-family: var(--font-family-Inconsolata);
+}
+
+.service-sub-title h3 {
+  font-family: var(--font-family-asap);
+  color: var(--color-base-gray-600);
+  font: var(--text-md-asap);
+  text-align: center;
+}
+
+.service-skils {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 888px;
+  height: 155px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  width: 280px;
+  height: 155px;
+  gap: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--color-base-gray-200);
+}
+
+.service-card img {
+  display: flex;
+
+  width: 48px;
+  height: 48px;
+}
+
+.service-card h4 {
+  color: var(--color-base-gray-600);
+  font: var(--text-sm-asap);
+  font-weight: bold;
+}
+
+.service-card p:nth-child(3) {
+  color: var(--color-base-gray-500);
+  font: var(--text-sm-mavenpro);
+  font-size: 14px;
+  font-family: var(--font-family-mavenpro);
+}

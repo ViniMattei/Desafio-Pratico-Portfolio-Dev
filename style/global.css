@@ -2,7 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 :root {
@@ -30,11 +37,4 @@
   --font-family-mavenpro: "Maven Pro", serif;
   --text-md-mavenpro: 16px/140%;
   --text-sm-mavenpro: 14px/140%;
-}
-
-.container {
-  height: 650px;
-  background: url(/assets/img/Background_Intro.png);
-  background-size: cover;
-  object-fit: cover;
 }
